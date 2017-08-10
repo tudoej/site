@@ -1,0 +1,51 @@
+#breadcrumbs,
+#main-navigation,
+#masthead,
+#main,
+#wpadminbar,
+#footer,
+#post-footer {
+	display: none !important;
+}
+
+#content-mid {
+	top: 0 !important;
+	border: none !important;
+}
+
+#content-inner {
+	padding: 0 !important;
+}
+
+body {
+	border: none !important;
+}
+
+body,
+#content, 
+#content-mid,
+#content-inner {
+	background: #FFFFFF !important;
+}
+
+#sidebar {
+	width: 400px !important;
+}
+
+#sidebar #listing-event-map {
+	width: 400px !important;
+}
+
+#sidebar aside,
+#sidebar .section-head,
+#directions_from_address {
+	display: none !important;
+}
+
+#sidebar aside.widget_listing_event_map {
+	display: block !important;
+}
+
+#map_directions_title {
+	display: block !important;
+}
