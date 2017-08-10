@@ -1,0 +1,574 @@
+3.0.6 - 2016-03-15
+fixes:
+	- Updated Geo module, Fixed fatal errors when there is no active providers
+	- Some text strings without textdomain, impossible to translate
+	- Categories no more count custom forms items
+	- Split Event address, location and url in structured data
+	- Add a Business/Event widgets button URL no more contains category parameter.
+changes:
+	- Contact info form shouldn't have a pre-defined http:// (along with other URL fields)
+	- Upgraded Example Child Theme
+
+
+3.0.5 - 2016-01-21
+fixes:
+	- User password changes without request from the user
+	- Some incompatibilities with new PHP7
+	- Added User Nickname on edit profile form, fixed WordPress 4.4 incompatibility
+	- Removed 'listing_claimable' from the search params in wp-admin
+changes:
+	- Change http to https for social links
+	- Don't display 'Upgrade' button if there are no purchesable addons
+
+
+Changelog for 3.0.4 - 2015-12-10
+
+Fixed: Lost user password after edit profile
+Fixed: Translation some strings
+Fixed: Some Listing metaboxes
+Changed: Added 'app-require-updater' theme support
+Changed: Removed single-transaction.php template
+Changed: WordPress 4.4 compatibility
+
+
+Changelog for 3.0.3 - 2015-08-26
+
+Fixed: Duplicate field showing on registration form after WP 4.3
+Changed: There's now only one password field in registration, profile and reset password pages (WP 4.3 or later)
+
+
+Changelog for 3.0.2 - 2015-07-09
+
+Added: Option "Show Only Sub-categories", which allows to show only child categories in the menu on a taxonomy archive
+Fixed: Orders appears in search results
+Fixed: Can't remove defaut AppThemes account from the social network fields' tips
+Fixed: The page template meta box should be visible
+Fixed: Hide empty categories option doesn't work
+Fixed: Edit Event user capabilities
+Fixed: Custom form select list bug
+Fixed: Main menu sub pages style
+Changed: Change widgets names to 'Theme Name Widget Title'
+Deprecated use of APP_View_Page::_get_id()
+
+
+Changelog for 3.0.1 - 2015-05-21
+
+Fixed: Redirect URL when returning from the PayPayl
+Fixed: Categories Menu and Page options are not saving
+Fixed: Potential listing/event form vulnerability
+
+
+Changelog for 3.0 - 2015-05-13
+
+Added: Font awesome so we can use icons
+Added: "last 30 days" chart and forum dashboard widgets
+Added: Admin notice to install AppThemes Updater plugin to prevent theme name collision issues
+Changed: Deprecated function va_update_post_status()
+Changed: Hide backend custom post type columns on small screens (leave only post title)
+Changed: Use new datepicker stylesheet
+Changed: Theme options text and better organize
+Changed: Footer links with new nofollow tag
+Changed: Theme option pages should be responsive
+Fixed: Lost page template on update
+Fixed: Email not sent when upgrading
+Fixed: Sub categories style in refine search
+Fixed: Facebook url bug
+Fixed: Vantage sub menu height
+Fixed: New contact fields on back end
+Fixed: Include new contact fields to csv
+Fixed: Potential XSS vulnerability
+Fixed: Geocoding bug, when address isn't found
+
+
+Changelog for 1.4.1 - 2015-03-25
+
+Changed: Updated MP Addons module
+Fixed: Show user description for users who have registered but don't have listings yet
+Fixed: SEO footer link
+Fixed: Sharing site in FaceBook (use Default Open Graph Image control in Customizer)
+Added: Default Open Graph Image control in Customizer
+
+
+
+Changelog for 1.4 - 2015-03-05
+
+Added: Ability to complete listing/event orders later through user's dashboard
+Added: Ability to set status "Deleted" for Listings and Events on the user's dashboard and manage "deleted" items in the back-end
+Added: Ability to use coupons in relisting process
+Added: Option to set number of available categories to choose for free listing/events
+Added: Option to choose content editor type (Plain text, HTML editor, TinyMCE editor) on listinf/event forms.
+Added: Social API, added email and google+ contact methods to listing, event and profile forms, added appropriate filters for extending contact fields
+Added: Order description to orders index page (back-end)
+Added: AppThemes MarkePlace page in back-end
+Added: Option to disable redirect from default WP login pages
+Added: Order ID in subject of receipt email
+Added: Term description on taxonomy index page, TinyMCE editors on the Edit Term forms (Listing Categories, Listing Tags, Event Cantegories, Event Tags, Blog Categories, Blog Tags)
+Added: Biographical info to the user's profile page
+Changed: Disallow to contact claimable listing owner before listing will climed by someone
+Changed: Send email to admin for new published (without moderation) listings/events
+Changed: Disallow users to select images from 'Media Library' tab while editing listing in back-end
+Changed: Removed pagination when random sort order
+Changed: Change string with forced recurring plan: If a plan is set for 1 month forced recurring, then on the front end it will read 'for every month' and not 'for 1 month'
+Changed: Show user's display name instead of username on Event Attendees widget
+Changed: Added pan/zoom controls to the map if opened on mobile device. (disable unwanted zooming/panning)
+Changed: Custom forms got custom icons in back-end menu
+Fixed: Issue with importer attachments
+Fixed: Prevent duplicates when importing
+Fixed: Prevent double click 'next step' on submitting listing/event
+Fixed: Hide Internal templates on the Quick Edit form
+Fixed: Added options to select Addon duration and period type (days, months, years) for listing addons and addons included in pricing plan, moved js to separated file, changed features wording in front-end. IMPORTANT: Changes will not automatically accepted on existing sites. For example, if user previously set duration = 365 days, he still see the same. To change wording to "1 Year", admin have to manually edit addon options and set "Duration = 1" and "Period Type = Year". It can't be done automatically in many reasons.
+Fixed: Add alt tag to listing uploaded images
+Fixed: Fatal error when mbstring PHP module diactivated on the server
+Fixed: Duplicate email for event submission
+Fixed: Order Receipt Emailed Before Payment is Made
+Fixed: New Review disables description. Prevent early escape from js process on Review submitting.
+Fixed: Images order not being saved while editing listing
+Fixed: Add review ribbon styling.
+Fixed: Style issue with map directions table width in Map widget
+Fixed: PHP errors when trying to open dashboard of unknown user
+Fixed: Comments/reviews tabs on mobile devices
+Fixed: Add mp3 support in custom forms. Allowed to add numbers to file extentions
+Fixed: Past dates displayed in the icon on events lists. Filter all past dates except latest in the Event icon.
+Fixed: Defaults for checkboxes not visible on the front end.
+Fixed: Image classes are missing for posts
+Fixed: Empty search results text needs better formatting
+Fixed: Image algnment css missing
+Fixed: like_escape is deprecated since WP version 4.0
+Fixed: Update custom form bug
+
+
+
+Changelog for 1.3.4 - 2014-10-31
+
+Added compatibility with Contact Form 7 plugin
+Added russian Ruble to currencies list
+Added the API Key option for Google Maps & Geocoder provider
+Fixed invalid links on events comments, no commenter name when submitted by guest
+Fixed "Leave a Comment" heading when reply form is shown
+Fixed Geo Settings Example Map link is broken
+Fixed invalid texdomain in Bank Transfer message
+Fixed compatibility issue with BackupBuddy plugin
+Fixed typo in contact form notice message
+Fixed issue with sending out emails when in the From field yahoo or aol email address
+Updated noUiSlider lib
+
+
+Changelog for 1.3.3 - 2014-07-14
+
+Fixed encoding of blog name in emails
+Fixed alignment of 'Password Again' field in Edit profile page
+Fixed alignment of titles in Custom forms
+Fixed notice for 'Favourite' button when user not logged in
+Fixed message for moderated reviews
+Fixed responsive issue with admin bar
+Fixed styles for RSS widget
+Fixed redirect issue when non logged in user clicks 'Add review' link
+Fixed sanitizing plans descriptions
+Fixed gravatars in events when comment submitted by guest
+Fixed one use query args in urls on admin pages
+Fixed enqueue of 'comment-reply' on the single blog post
+Fixed issues with removing logo image
+Fixed lists elements in listing/event description
+Fixed theme color in Customizer
+Fixed styles of textarea fields content
+Fixed possible issues with protocols in 'Website' field
+Fixed styling issue with recurring plan message
+Fixed responsive issues with listing contact form
+Fixed sender name and email address in emails sent from site
+Fixed hidding featured image on screens 400-600px
+Fixed min map zoom to avoid displaying earth multiple times
+Fixed issue with recent reviews widget when added to single event sidebar
+Fixed responsive issue with ads and logo
+Fixed setting featured image from media library
+Fixed refine categories list styles when it contains many categories
+Fixed performance of database query when sorting by recently reviewed/commented listing/events
+Fixed issues with events dates
+Fixed geo unit settings when displaying directions on single listing/event page
+Fixed events dates format
+Fixed hidding the review form and link when reviews are disabled
+Fixed sub categories options in Customizer
+Fixed issue with pagination on home when page on front is set to different one
+Fixed issue with displaying user stats on his dashboard to other users
+Fixed featured expiration order issue
+Fixed issue with file upload field from custom forms
+Fixed issue with urls in social connect widget
+Fixed region refinement in map widget when using 'get directions' feature
+Fixed displaying claimed listings in user dashboard
+Fixed issue with 'upcoming events' widget when event have multiple dates assigned
+Fixed issue with rejecting claimed listing
+Fixed setting select boxes and radio buttons as required in custom forms
+Fixed issue with changing field names in custom forms, in that case internal field name was also changed causing listing data loss
+Fixed preselecting categories when claiming or renewing listing
+Added support for Google Business Geocoding
+Added Open Graph meta tags
+Added filters on review content
+Added compatibility with Twitter Pro Widget
+Added support for RTL emails
+Added support for comments on pages
+Added compatibility with WP User Avatar plugin
+Added to admin dashboard total revenue, product info, and published listings
+Added register link to review notice when user is logged out
+Added ribbon for pages
+Added 'reply-to' header into emails from contact form
+Added email notification for admin when payment failed
+Added missing location fields to events.csv sample file
+Added Custom Fields metabox for editors and admins when editing listing from the backend
+Added ability to override by child theme a logo, breadcrumb icon, and map pins
+Added tooltip for PayPal IPN option
+Added cleaning geodata information of listing if its being deleted
+Added validation to creating custom forms
+Added validation to contact form
+Added into 'Popular Events' and 'Similar Events' widgets description with possible use
+Added 'appthemes_map_icon' and 'appthemes_map_vars' filters on arguments passed to maps
+Added message and placeholder into 'get directions' field from map widget
+Replaced use of 'TinyRange' with 'noUiSlider' library
+Removed the hash sign '#' under the review
+Removed comments item from admin bar
+Moved location of the jQuery Validate library
+Changed schema declaration for listings from 'Organization' to 'Local Business'
+
+
+Changelog for 1.3.2 - 2014-02-07
+
+Fixed currency identifier
+Fixed Password Strength meter on user profile page
+Fixed validation of listing and addons duration for recurring pricing plans
+Fixed issue with duplicate items in breadcrumb
+Fixed issue with Pricing plan titles
+Fixed issues with Events date format
+Fixed issues with Events navigation by months
+Fixed issues with ajax calls when 'FORCE_SSL_ADMIN' defined
+Fixed issue with map zoom when map contained one marker
+Fixed issue with printing single listing/event page
+Fixed issue where listing author was not able to view listing when it was expired
+Fixed issue with uploading images to listing and events from backend
+Fixed issue with possible update of Vantage theme by WP Updater to different one
+Fixed issue with selecting template for new page in WP Admin
+Fixed error when user claiming listing and 'charge for listings' option is disabled
+Fixed admin menu icons on WP 3.8
+Fixed link colors on single event page
+Fixed duplicated elements ID in menu
+Fixed price tag styling in events create form
+Fixed appearing 'test' string in checkout process
+Fixed Strict Standards errors
+Fixed deprecated function call wp_convert_bytes_to_hr() in Importer
+Fixed use of deprecated jquery .live() method
+Fixed notices when listing have no geo coordinates
+Fixed undefined constant notice on theme install/update
+Fixed undefined index notices on Network Admin
+Corrected misspelled word 'still' in PayPal processing orders
+Added missing sidebar hooks, appthemes_before_sidebar_widgets() and appthemes_after_sidebar_widgets()
+Added feature to ping 'update services' while publish listing and events
+Added option to disallow access to WP Admin
+Moved jQuery Validation messages to theme localization file
+Introduced functions to obtain class instances
+Changed default user role to Contributor
+Removed unused 1140.css stylesheet
+Removed .BMP from supported image types
+
+Changelog for 1.3.1 - 2014-01-10
+
+Listing duration/recurring period now set using time period with applicable maximums along with period type (Days, Months, Years)
+Fixed plan title going missing after upgrade to 1.3
+Fixed error when claiming with coupon resulting in continue button point to invalid page
+Fixed event attendees widget popup
+Fixed listings ending prematurely if recurring PayPal subscription is cancelled manually
+Fixed listings and events not showing in category archive pages
+Fixed refine search sidebar not showing up when events are disabled
+Add days away to be included in upcoming events widget
+
+Changelog for 1.3 - 2013-12-28
+
+Added Search Index
+Added Recurring payments support
+Enabled default WordPress blog search widget
+Fixed canceling paypal transaction and returning to checkout process
+Fixed duplicating item issue when going back steps in checkout
+Fixed contact form ability to re-open again after being opened and closed once already
+Fixed translatable strings for certain form validation error messages
+Use WordPress core option 'start_of_week' in event calendars
+Force listing/event edit attachment dragging placeholder height
+Prune expired featured along with expired listings during manual expiration execution
+Allow child/grandchild/plugin to disable theme color stylesheet
+Added APP_System_Info page
+Added filter for date format for single event dates list: 'va_single_event_dates_date_format'
+Added pending claimed listings to admin bar
+Allowed ordering of pricing plans
+Added language support for jQuery validation plugin
+Added sidebars for create and edit listing and create and edit event
+Added nofollow rel tags to events favorite buttons
+Added nofollow rel tags to favorite buttons
+Removed unused gray gradient image behind category items in category nav dropdown
+Added login link to error message for renew and purchase/upgrade if not logged.
+Made event calendar thumbnail month abbreviation translatable
+Listing/event custom forms admin meta box
+Prevent save listing button from being clicked twice
+Prevent subscribers from accessing add/edit events wp-admin page
+Fixed ability to tab out of pricing plan title
+Fixed duplicated menu item creation upon successive activation of events
+Fixed url redirect when clicking cancel at paypal, allow to choose new payment gateway
+Fixed highest rating sorting method to sort by average rating then by comment count
+Fixed styling for thumbnail image for image attachments on listing/event create/edit
+Update example archive-listing in sample child theme
+Fixed date format for single event dates list
+Fixed listing thumbnail img CSS inefficiencies
+Fixed event comments not showing when not logged in
+Hide internal use page templates from page dropdown and restrict internal use pages to use their own template only
+Take custom form field filling out of renew process
+Take custom form field filling out of claim process
+Fixed to use blog local time for time diff calc instead of UTC
+Fixed time 'ago' creation to gracefully handle negative time differences
+Fixed claim listings breaking during moderate_claimed_listings = off
+Added value attribute to submit button
+Added appthemes_create_order action for upgrading listings and events to make tax charge work
+Fixed bulk editing of listing and event categories
+Fixed bulk edit listing 'Listing Claimable' status
+Fixed admin edit profile url in wp-admin
+Fixed html error in purchase-listing-new.php
+Use wp_login_url instead of APP_Login class method directly. Fixes fatal error when app-login theme support is disabled.
+Fixed item title for order confirmation email.
+Add coupon support to listing claim process
+Fixed claimed listing bug with claimed moderation turned off
+Fixed bugs with claimed listings process, reordering of hooks and functions
+Removed VA_Listing_Author view controller, this was replaced way back with the Vantage dashboard
+Fixed author archive css left-aligned bug
+Added 'appthemes_create_order' hook to listing renew and listing claim checkout process
+Fixed translated locale strings
+Removed js 'disableSelection()' addition to .uploadable due to actual text input child is not editable
+Fixed date based strings to be translatable
+Fixed style selector typo for create/edit event page bg
+Fixed claim listing page, login link's 'redirect to' url
+
+Changelog for 1.2.1 - 2013-07-15
+
+Set "listing duration" in wp-admin to display 0 instead of blank
+Allow prior-planless (i.e. imported) listings to be upgraded
+Fix listing importer option to mark all as claimable
+Allow control over default sort methods on home and tax pages, just like search
+Fix warning for custom forms submenu visible on network installs
+Fix connected orders admin meta box
+Add filterable order description
+Add support for appthemes coupon plugin
+microdata added for listings, ratings, reviews, events & webpage
+Fix sorting dropdown/select
+Added hook 'va_dashboard_sidebar_account_info'
+Fix category lock during listing pending status
+Remove old, unused ie.css file include
+Remove duplicated css reset, also included at top of style.css
+Featured image for blog posts fix to show auto on list not singular
+Allow for removal of header image
+New install gets preset widgets installed
+Rename single/multiple map widgets, give error message if used in wrong place
+Fix tax charge bug
+Add styling for images within listing/event section#overview
+Profile form hooks
+Fix wp-admin allow marker position to be adjusted within same address and prevent position from being reset to actual address geocode position upon edit
+Emails for expired featured listings
+Make sure not charged for event when event_charge setting is disabled
+Make all events widgets use date format setting
+Make upcoming events widget sort by event date
+Move 'event expiration' setting to events settings page
+Fix z-index for events date sort
+Fix url in expired listing email
+Add 'default' sort to search for events/listings
+Add admin 32x32 icon for listings and events
+Allow marker position to be adjusted within same address and prevent position from being reset to actual address geocode position upon edit
+Fix bug with custom forms with file upload fields
+Fix bug where featured options were not showing properly in plans.
+Show geocoder response code for is_admin() for initial debugging.
+Fix listings/events import form geocode checkbox
+Fix event dates and times being imported using csv importer
+Allow float value instead on only integer for category surcharges
+Fix 'Upcoming Events' widget to use date_format option
+Implement tinynav for sort dropdown
+Add email to listing/event owner contact form
+missed translatable strings
+introduce VA_Locale to internally translate month and day of the week names
+Fix featured sort to check for events only when events are enabled
+Add settings to control how featured are ordered for listings and events
+Fix custom forms unique id problem
+Fix contact form resetting to allow sucessful resubmissions.
+Make featured sort randomly while non-featured remains sorted by newest, when on home or archive page using default sort.
+Fix ordering of listing and events on home
+Fix listings/events home page showing on blog home.
+
+Changelog for 1.2 - 2013-05-20
+
+Added Events, like listings but are date based items for listing upcoming events
+Events have a basic payment structure that includes: Price, Duration, Featured on home and/or category, categories included
+Multiple category support for Listings and Events
+Optional Listing and Event category surcharges
+Events categories are separate from business listing categories
+Event widgets: Create an event, Event attendees, Similar events, Upcoming events, Popular Events and more
+Driving directions (including print feature) added to Listing/Event Location Widget
+A new, large map is available for list pages (home, archives, search etc)
+AppMaps, an API wrapper for map providers and geocoding providers, plugins available soon that will allow the use of map APIs from Bing, MapQuest, Nokia and Leaflet
+Google is still default map provider and geocoding provider
+Sorting for all business listing list pages (home, archives, etc)
+Contact business listing owner and event organizer buttons
+Many changes in how theme handles purchases and claim listings, upgrades and renewals
+Many more updates, bug fixes, and features, too many to list!
+
+Changelog for 1.1.4 - 2013-02-06
+
+Make navigation menu responsive, becomes native select menu at smaller screen sizes.
+Add responsive styling to front end pages.
+Fix wp-admin created listings not showing in search results when results sorted by rating.
+Fix redirect when following the registration link on claim listing page.
+Fix bug to allow upgrades on claimed listing on free plan.
+Added prune now button for immediately expiring listings.
+Fix date formatting bug on wp-admin edit listing form.
+Fix bug for custom form not showing on create/edit listing on front end.
+
+Changelog for 1.1.3 - 2012-11-09
+
+Fix error when searching with no search term.
+Fix listing expiration, schedule featured expiration check for hourly.
+Format user contact fields in wp-admin listing edit listing.
+Fix date format to use WP setting on wp-admin listing edit in Pricing Information meta box.
+Fix search pagination error affecting multisite.
+Disallow children plans from being available to be chosen.
+Fix js error on wp-admin listing edit.
+use _n() instead of __ngettext() (deprecated WordPress function).
+Fix expiration of featured status.
+Add listing_duration field to csv importer.
+Add featured image to blog posts.
+Login/Register redirect setup if not logged and click Create Listing.
+Add language setting to Google Maps API usage.
+Allow listings w/o plan (created in wp-admin) to be upgraded.
+Fix upgrade listing error.
+Fix search sort by rating not including listings with 0 reviews.
+Fix dashboard pagination.
+Fix bug causing claimed accepting and subsequent order activation and plan data to get overidden by meta box values on wp-admin publish(accept).
+Option to geocode imported listings.
+Added units to listing duration meta boxes and pricing meta boxes.
+In the future, the pricing example should be updated to use the current currency.
+Fix slider rounding and sync slider value to actual sql distance used.
+Implement search options, default sorting, default radius.
+Cleanup reviews code.
+Listing form updates, fix bug with wp_tax_query on form submission.
+Fix Payments menu collapsed when editing plan.
+Update url with anchor to the tab so it's easy to link to business listings page tabs.
+Removed status headline hangers for dashboard favorties.
+Fix Favorite button text alignment and underline.
+Allow checkbox to disable emails generated during import.
+Fix purchase receipt email content, removing the duplicate links and providing purchase summary table.
+Fix purchase form to only take checked options from selected plan.
+Fix Sharethis misaligned when logged out.
+Updates to listing create/edit form to deal with image upload errors and other errors on edit listing.
+Make listing thumbnail clickable.
+Featured listings are now shown as featured in search.
+Change existing listing purchase text to show unlimited days.
+Change text showing featured can never expire.
+Format listing contact fields like webste, twitter, facebook.
+Fix listing expiration, now checks hourly.
+Admin can now change author to any user, including subscribers.
+
+Changelog for 1.1.2 - 2012-10-02
+
+Change display order for Popular Listings Categories widget.
+Add missed changes for term count fix.
+Fix javascript bug preventing clicking overview tab after submitting review, in Windows IE, FF, and Safari.
+Make map pin draggable in crete and edit listing pages.
+Fix broken author reviews link url
+Add Bank Transfer payment gateway.
+Fixed default pricing plan not being create during an upgrade.
+Fixed currency changes to be displayed properly.
+Fixed permalinks issues for dashboard and claimed listings in certain scenarios.
+Fixed tags not being able to be saved.
+Reviews now display line breaks to show paragraphs.
+Notes about base64 usage in CSS & link to FAQ.
+Changed "no expiration date" display from "0 days" to "Unlimited Days".
+Fixed bug disallowing puplishing a moderated listing.
+Fixed bug disallowing accepting a moderated claimed listing.
+Can now quick edit listings as claimable from wp-admin.
+Can now bulk edit listings as claimable from wp-admin.
+Redirect after claimed listing no longer ends in listing not found page.
+Error returned if owner tries to claim their own listing.
+Upgrade listing no longer visible when charging is turned off.
+Pricing plans no longer increase the category count.
+Remove options text from pricing plan when no option available
+Fixed XSS vulnerability.
+Move search refinement preserving logic out of header template.
+Fixed problems with the language pack.
+Fixed fatal error on login page.
+
+Changelog for 1.1.1 - 2012-08-26
+
+Fixed issue with dissapearing images.
+
+Changelog for 1.1 - 2012-08-22
+
+Pricing Plans which offer multiple pricing options to be offered, and are connected to categories.
+Improved Location Search which now calculates a default radius from the location search term used.
+PDF Uploads are now available in custom forms.
+Automatic Updates via the AppThemes Updater plugin.
+Added option to show ShareThis on blog posts and listings.
+Add tooltips to admin settings.
+Added comments hooks.
+Added many AppThemes Hooks from our general API.
+Added new permalink options for many of Vantage's pages.
+Added new listing gallery manager metabox.
+Added Social connect plugin compatibility.
+Added Support for 3.4 flexible sized header images.
+Dashboard now lists a listing as infinite when there is no duration.
+Made many backend columns sortable.
+Added class and ids to custom fields on a single listing page.
+Removed 'va_upload_mimes' filter.
+Added current menu item styling.
+Removed the rolodex image when a custom header image is uploaded and used.
+Category lists, in the menu and the category page, now show up alphabetically instead of the order in which the were entered.
+Use help tips in admin instead of help tabs.
+Removed example functionality in child theme.
+Lock category selection for existing listings.
+Added the ability for users to claim listings that have been marked as claimable by the admin and to moderate claimed listings.
+Added an Upgrade button to the edit listing page.
+Added ability to sort featured listings on home page by oldest, newest, or random.
+Removed ability to accept listings from the front end. Listings must be moderated in the back.
+Remote attachments and featured images will now correctly be imported and set.
+Owner can reply to their listing's reviews.
+Added the ability for users to favorite listings, which will add them to a list in their dashboard.
+Added AppThemes's Wrapping Support.
+Added Live Customizer Support for Color Scheme.
+Added option to set the number of listings per page.
+Added featured thumbnail to backend listing table.
+Featured listings will now paginate correctly on the front page/categories pages.
+Added the ability to turn on/off certain addons, as well as set their duration.
+Listings with 0 duration no longer expire.
+Added a new Payments menu for items having to do with checkout.
+Many CSS fixes and improvements.
+
+
+Changelog for 1.0.1 - 2012-06-15
+
+A barebones example child theme has been bundled for easily start a new child theme.
+The distance filter is now only shown if there's a geo query.
+Search terms are now listed at top of search results.
+Searches with no input will now return all listings, instead of blog results.
+Searches with no results now display the correct message
+Searches will now include a listing's category and tag names.
+Searches ordered by rating behave correctly.
+Many IE issues have been fixed.
+Many styling issues have been fixed.
+Theme color options are now separated into another Appearance group
+Colored stylesheets are automatically disabled when a child theme is being used.
+Ad widgets and sidebars are now available for listing pages.
+Custom forms are no longer counted in the category counters.
+Themed logins have been added
+Internationalization has been added to single-listing.php.
+Review counts and averages are no longer affected by replies.
+Javascript validation has been added to review/replies.
+Replied-to users no longer are prevented from seeing the reply to their review.
+A X-UA-Compatible header is now sent.
+Added a geocoding request when the coordinates for a listing are missing
+Custom fields are now sanitized when saved
+Custom fields now allow safe HTML.
+Categories/Tags with no listings now display proper messages.
+Default map zoom now shows location at street level
+Comments now behave correctly when disabled.
+CSV files now correctly import 'status' columns
+Display listing category in admin list table.
+Listings Admin Table now displays the listing category and expire date
+Orders now have their own statuses and their API has been updated
+Orders now are accessed via a new permalink structure.
+The Orders Admin Table has been revamped.
