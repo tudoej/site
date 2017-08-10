@@ -1,0 +1,144 @@
+/* This file is loaded on all admin pages so be specific! */
+
+select[disabled] {
+	color: #ADA9A5;
+}
+
+.column-thumbnail {
+	width: 80px;
+	text-align: center;
+}
+
+#featured-pricing {
+	width: auto;
+	margin: 16px 4px;
+}
+
+#category-surcharge-pricing {
+	width: auto;
+	margin: 16px 4px;
+}
+
+#category-surcharge-pricing thead p.description {
+	margin: 0;
+	font-size: 11px;
+	display: inline-block;
+}
+
+
+/* listing location meta box */
+
+#normal-sortables #listing-location.postbox #listing-map,
+#normal-sortables #listing-location.postbox #listing-find-on-map,
+#normal-sortables #event-location.postbox #event-map,
+#normal-sortables #event-location.postbox #event-find-on-map {
+	margin: 10px;
+}
+
+#normal-sortables #listing-location.postbox #listing-address,
+#normal-sortables #event-location.postbox #listing-address {
+	width: 25em;
+}
+
+#normal-sortables #listing-location.postbox #listing-map,
+#normal-sortables #event-location.postbox #event-map {
+	width: 520px;
+	height: 300px;
+	position: relative;
+}
+
+#side-sortables #listing-location.postbox #listing-map,
+#side-sortables #event-location.postbox #event-map {
+	width: 260px;
+	height: 260px;
+}
+
+#side-sortables #listing-location.postbox .form-table th,
+#side-sortables #event-location.postbox .form-table th {
+	padding: 10px 0;
+}
+
+#side-sortables #listing-location.postbox .form-table td,
+#side-sortables #event-location.postbox .form-table td {
+	padding: 5px 0;
+}
+
+#side-sortables #listing-location.postbox #listing-find-on-map,
+#side-sortables #event-location.postbox #event-find-on-map {
+	margin: 10px 0;
+}
+
+.listing-gallery-info {
+	font: italic 10px sans-serif;
+	display: block;
+	color: #666;
+}
+
+#headimg {
+	position: relative;
+	padding: 15px 0;
+}
+
+h1.displaying-header-text {
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+}
+
+h1.displaying-header-text a {
+	text-decoration: none;
+}
+
+#desc.displaying-header-text {
+	margin:0px;
+	color:#333;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:normal;
+	-moz-text-shadow: 0 1px 0 #DDD;
+	-webkit-text-shadow: 0 1px 0 #DDD;
+	text-shadow: 0 1px 0 #DDD;
+	position: absolute;
+	top: 53px;
+	left: 82px;
+	z-index: 10;
+}
+
+#desc.nologo {
+	position: relative;
+	top: inherit;
+	left: inherit;
+	padding-top: 15px;
+}
+
+#listing-custom-forms .description,
+#event-custom-forms .description{
+	display: block;
+}
+
+#listing-custom-forms .uploaded,
+#event-custom-forms .uploaded{
+	margin-left: 256px;
+	width: 350px;
+}
+
+.file-delete {
+	float: right;
+	margin: 5px 10px;
+	color: #f00;
+}
+
+.file-delete .checkbox {
+	width: 16px;
+}
+
+@media screen and (max-width: 782px) {
+	.fixed .column-thumbnail,
+	.fixed .column-expire,
+	.fixed .column-claimable,
+	.fixed .column-taxonomy-listing_category,
+	.fixed .column-taxonomy-event_category {
+		display: none;
+	}
+}
